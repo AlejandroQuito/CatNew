@@ -4,8 +4,12 @@ public class Cat
     private double originWeight;
     private double weight;
 
+    private double weightE;
+
     private double minWeight;
     private double maxWeight;
+
+
 
     public Cat()
     {
@@ -22,6 +26,11 @@ public class Cat
         System.out.println("Meow");
     }
 
+    public void pee() {
+        weight = weight - 123;
+        System.out.println("PEPEPEeeeeeee");
+    }
+
     public void feed(Double amount)
     {
         weight = weight + amount;
@@ -30,6 +39,12 @@ public class Cat
     public void drink(Double amount)
     {
         weight = weight + amount;
+    }
+
+    public Double weightEat () {
+        weightE = getWeight() - originWeight;
+        System.out.println("Weight eat:  " + weightE);
+        return weightE;
     }
 
     public Double getWeight()
