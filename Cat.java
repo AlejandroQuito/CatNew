@@ -1,6 +1,7 @@
 
 public class Cat
 {
+    public static int count;
     private double originWeight;
     private double weight;
 
@@ -17,7 +18,14 @@ public class Cat
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
+        count++;
 
+    }
+    public static int getCount()
+
+    {
+        System.out.println("How match cat will be started:  " + count);
+        return count;
     }
 
     public void meow()
@@ -55,9 +63,11 @@ public class Cat
     public String getStatus()
     {
         if(weight < minWeight) {
+            count--;
             return "Dead";
         }
         else if(weight > maxWeight) {
+            count--;
             return "Exploded";
         }
         else if(weight > originWeight) {
