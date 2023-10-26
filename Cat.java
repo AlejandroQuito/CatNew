@@ -1,6 +1,10 @@
 
 public class Cat
 {
+    public static final int NUMBER_OF_EYES = 2;
+    public static final double MIN_WEIGHT = 1000;
+    public static final double MAX_WEIGHT = 9000;
+
     public static int count;
     private double originWeight;
     private double weight;
@@ -42,6 +46,7 @@ public class Cat
     public void feed(Double amount)
     {
         weight = weight + amount;
+        if (weight > maxWeight)
     }
 
     public void drink(Double amount)

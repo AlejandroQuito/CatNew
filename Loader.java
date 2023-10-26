@@ -4,7 +4,7 @@ public class Loader
     public static void main(String[] args)
     {
         Cat.count = 0;
-        
+
 
         Cat olli = new Cat();
         System.out.println("Olli  " + olli.getWeight());
