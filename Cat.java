@@ -14,6 +14,8 @@ public class Cat
     private double minWeight;
     private double maxWeight;
 
+    public double startWeight;
+    public double kitten;
 
 
     public Cat()
@@ -24,6 +26,12 @@ public class Cat
         maxWeight = 9000.0;
         count++;
 
+    }
+    public Cat(double startWeight)
+    {
+        this();
+        this.startWeight = startWeight;
+        System.out.println("Cat start weight - " + startWeight);
     }
     public static int getCount()
 
@@ -46,7 +54,7 @@ public class Cat
     public void feed(Double amount)
     {
         weight = weight + amount;
-        if (weight > maxWeight)
+        if (weight > maxWeight);
     }
 
     public void drink(Double amount)

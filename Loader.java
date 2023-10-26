@@ -1,4 +1,3 @@
-
 public class Loader
 {
     public static void main(String[] args)
@@ -60,12 +59,30 @@ public class Loader
         System.out.println("Hehe:  " + hehe.getWeight());
 
 
-
-
         Cat.getCount();
 
-
+        Cat niki = new Cat();
+        GetKitten(1100);
+        GetKitten(1200);
+        GetKitten(1100);
 
 
     }
-}
+
+    double startWeight;
+    private static Cat GetKitten(double startWeight)
+    {
+        if(startWeight == 1100)
+        System.out.println("Return Cat   ><  this is kitten " + startWeight);
+        else
+            System.out.println("Вес иной");
+
+        return null;
+
+    }
+
+
+    }
+
+
+
