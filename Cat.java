@@ -15,7 +15,9 @@ public class Cat
     private double maxWeight;
 
     public double startWeight;
-    public double kitten;
+
+    public String catColors;
+
 
 
     public Cat()
@@ -33,6 +35,17 @@ public class Cat
         this.startWeight = startWeight;
         System.out.println("Cat start weight - " + startWeight);
     }
+
+    public void setCatColors(String catColors)
+    {
+        this.catColors = catColors;
+    }
+
+    public String getCatColors()
+    {
+        return catColors;
+    }
+    
     public static int getCount()
 
     {

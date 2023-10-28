@@ -64,7 +64,6 @@ public class Loader
         Cat niki = new Cat();
         GetKitten(1100);
         GetKitten(1200);
-        GetKitten(1100);
         GetKitten();
 
 
