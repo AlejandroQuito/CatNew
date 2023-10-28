@@ -65,20 +65,24 @@ public class Loader
         GetKitten(1100);
         GetKitten(1200);
         GetKitten(1100);
+        GetKitten();
 
 
     }
 
     double startWeight;
+
     private static Cat GetKitten(double startWeight)
     {
-        if(startWeight == 1100)
+        if(startWeight <= 1100)
         System.out.println("Return Cat   ><  this is kitten " + startWeight);
-        else
-            System.out.println("Вес иной");
+        return null;
+    }
+    private static Cat GetKitten()
+    {
+        System.out.println("Cat started;   ");
 
         return null;
-
     }
 
 
