@@ -66,6 +66,16 @@ public class Loader
         GetKitten(1200);
         GetKitten();
 
+        Cat xyi = new Cat("Jeny", 5, 2154.23);
+        System.out.println("Меня зовут:  " + xyi.getCatName() + ", мне " +xyi.getCatAge() + " лет, а вешу я - " + xyi.getWeight() + "грамм.");
+
+        Cat pidor = new Cat();
+        pidor.setCatName(xyi.getCatName());
+        pidor.setCatAge(xyi.getCatAge());
+        pidor.setWeight(xyi.getWeight());
+        System.out.println(pidor.getCatName());
+        System.out.println(pidor.getCatAge());
+        System.out.println(pidor.getWeight());
 
     }
 

@@ -18,6 +18,9 @@ public class Cat
 
     public String catColors;
 
+    public int catAge;
+    public String catName;
+
 
 
     public Cat()
@@ -36,6 +39,38 @@ public class Cat
         System.out.println("Cat start weight - " + startWeight);
     }
 
+    public Cat(String catName, int catAge, double weight)
+    {
+        this.catName = catName;
+        this.catAge = catAge;
+        this.weight = weight;
+
+    }
+
+    public void setCatAge(int catAge)
+    {
+        this.catAge = catAge;
+    }
+    public int getCatAge()
+    {
+        return catAge;
+    }
+
+    public void setCatName(String catName)
+    {
+        this.catName = catName;
+    }
+    public String getCatName()
+    {
+        return catName;
+    }
+
+    public void setWeight(double weight)
+    {
+        this.weight = weight;
+    }
+
+
     public void setCatColors(String catColors)
     {
         this.catColors = catColors;
@@ -45,7 +80,7 @@ public class Cat
     {
         return catColors;
     }
-    
+
     public static int getCount()
 
     {
